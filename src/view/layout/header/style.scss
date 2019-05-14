@@ -1,0 +1,54 @@
+.ant-layout-header {
+  .collapsed-btn {
+    display: inline-block;
+    width: 70px;
+    height: 64px;
+    background: #ffffff;
+    color: #333;
+    border: none;
+    z-index: 1;
+    &:focus {
+      color: #333;
+    }
+  }
+  button[ant-click-animating-without-extra-node]:after {
+    opacity: 0;
+  }
+  .header-right {
+    overflow: hidden;
+    &>div {
+      position: relative;
+      float: left;
+      padding: 0 12px;
+      cursor: pointer;
+      &:hover {
+        background: #eef;
+      }
+    }
+    .search {
+      width: 200px;
+      display: inline-block;
+      overflow: hidden;
+      &:hover {
+        background: #fff;
+      }
+      .search-icon {
+        font-size: 16px;
+        transition: all 1s;
+        transform: translateX(170px);
+      }
+      .move-icon {
+        transform: translateX(-10px);
+      }
+      .ipt {
+        width: 160px;
+        transition: 1s;
+        transform: translateX(180px);
+      }
+      .move-ipt {
+        display: inline-block;
+        transform: translateX(0px);
+      }
+    }
+  }
+}
