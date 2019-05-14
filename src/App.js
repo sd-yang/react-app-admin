@@ -11,19 +11,19 @@ const { Header, Content } = Layout;
 function App() {
   return (
     <Layout>
-      <Aside />
-      <Layout>
-        <Header>
-          <HeaderContent />
-        </Header>
-        <Content>
-          <BrowserRouter>
+      <BrowserRouter>
+        <Aside />
+        <Layout>
+          <Header>
+            <HeaderContent />
+          </Header>
+          <Content>
             <Route path="/" exact render={() => <div>main</div>} />
             <Route path="/form" render={() => <div>form</div>} />
             <Route path="/personal" component={Personal} />
-          </BrowserRouter>
-        </Content>
-      </Layout>
+          </Content>
+        </Layout>
+      </BrowserRouter>
     </Layout>
   );
 }
