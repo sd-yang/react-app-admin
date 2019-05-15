@@ -42,7 +42,7 @@ const Aside = (props) => {
           )}
         >
           <Menu.Item key="5"><Link to="/">查询列表</Link></Menu.Item>
-          <Menu.Item key="6">标准列表</Menu.Item>
+          <Menu.Item key="6"><Link to="/standardPage">标准列表</Link></Menu.Item>
           <Menu.Item key="7">卡片列表</Menu.Item>
         </SubMenu>
       </Menu>
