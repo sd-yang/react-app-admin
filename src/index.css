@@ -11,3 +11,15 @@
 .ant-layout-content {
   margin: 24px;
 }
+.ant-empty-image img {
+  margin: 0 auto;
+}
+.bg-color {
+  background: #fff;
+}
+.fl-lt{
+  float: left;
+}
+.fl-rt {
+  float: right;
+}
