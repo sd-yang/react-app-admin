@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Table } from 'antd';
 
 const defaultOptions = {
@@ -8,6 +7,7 @@ const defaultOptions = {
   size: 'default', // 表格大小
   showHeader: false, // 显示表头
   footer: false, // 显示表尾
+  rowSelection: undefined, // 可选择
 };
 
 class TableTemplate extends React.Component {
@@ -35,10 +35,4 @@ class TableTemplate extends React.Component {
   }
 }
 
-const mapStateToProps = () => {
-};
-
-const mapDispatchToProps = () => {
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(TableTemplate);
+export default TableTemplate;
